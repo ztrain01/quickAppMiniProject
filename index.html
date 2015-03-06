@@ -24,7 +24,9 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
   <script type="text/javascript">
     (function(){
-      var app
+      var app = angular.module('pickleApp', ['firebase']);
+      
+      app.controller('pickleController', function($scope, $firebase) 
   
   
     })
