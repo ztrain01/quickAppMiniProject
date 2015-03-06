@@ -7,15 +7,29 @@
   <div ng-app="pickleApp">
     <form name="newChatForm">
       <input type="text" ng-model="username" required>
-      
-    
-    
-    
+      <input type="text" ng-model="text" required>
+      <hr>
+      <button ng-click="addChat (username, text)" ng-disable="new"></button>
     </form>
-  
-  
-  
+    
+    <ul>
+      <li ng-repeat="message in messages">
+        {{ message.username }}: {{ message.text }}
+      </li>
+    </ul>
   </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      var app
+  
+  
+    })
+  </script>
+  
 
 </body>
 </html>
